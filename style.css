@@ -9,16 +9,15 @@ body {
 }
 
 .container {
-    background-image: url("images/background.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: ;
     width: 100%;
     min-height: 100vh;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background: conic-gradient(from 180deg at 50% 50%, #ff8a3d, #ffb347, #ff8a3d);
 }
 
 .login-card {
