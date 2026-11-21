@@ -1,62 +1,83 @@
-.container{
-    background-image: url("images/background.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    display: flex;
-}
-
-html, body{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.Login-card{
-    padding: 30px;
-    text-color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 400px;
-    height: 300px;
+body {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.container {
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 0px;
 }
 
-.Login-title{
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.login-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
     margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center;
 }
 
-.login-button{
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+.login-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.input-box {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+}
+
+.input-box:focus {
+    box-shadow: 0 0 0 2px #ff8a3d;
+}
+
+.login-button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 4px;
+    background-color: #ff8a3d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
     cursor: pointer;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: bold;
+    transition: background-color 0.2s;
 }
 
-.input-box{
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+.login-button:hover {
+    background-color: #e0701f;
 }

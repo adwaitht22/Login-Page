@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Login-Page</title>
 </head>
 <body>
     <div class="container">
-        <div class="Login-card">
-            <h1 class="Login-title">Login</h1>
-            <p class="Login-title">Username:</p>
-            <input class="input-box" type="text" name="username" placeholder="Enter your username"><br><br>
-            <p class="Login-title">Password:</p>
-            <input class="input-box" type="password" name="password" placeholder="Enter your password"><br><br>
+        <form class="login-card">
+            <h1 class="login-heading">Login</h1>
+
+            <label class="login-label" for="username">Username</label>
+            <input class="input-box" type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label class="login-label" for="password">Password</label>
+            <input class="input-box" type="password" id="password" name="password" placeholder="Enter your password" required>
+
             <button class="login-button" type="submit">Login</button>
-        </div>
+        </form>
     </div>
 </body>
 </html>
