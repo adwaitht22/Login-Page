@@ -80,3 +80,8 @@ body {
 .login-button:hover {
     background-color: #e0701f;
 }
+.signup-link {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
