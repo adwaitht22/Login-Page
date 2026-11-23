@@ -86,19 +86,21 @@ body {
     font-size: 14px;
 }
 .social-login {
+    padding: 10px 0;
     margin-right: 8px;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    color: white;
 }
-.google-icon, .facebook-icon {
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 50%;
-    background-color: white;
-    color: #555;
-    font-size: 15px;
-    transition: background-color 0.2s, color 0.2s;
-    width: 70px;
+.google-login {
+    color: white;
+}
+.facebook-login {
+    color: white;
+}
+.twitter-login {
+    color: white;
 }
